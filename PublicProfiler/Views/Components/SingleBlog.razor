@@ -1,0 +1,10 @@
+﻿@using PublicProfiler.Models
+
+<div>
+    <a href="/Blogs/Details/@Blog.BlogId">@Blog.BlogTitle</a>
+    <p>@Blog.BlogDescription</p>
+</div>
+@code{
+    [Parameter]
+    public Blog Blog { get; set; }
+}

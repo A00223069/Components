@@ -1,0 +1,16 @@
+﻿@using PublicProfiler.Models
+
+<h3>Blog List</h3>
+
+<dl>
+    @foreach (Blog Blog in ModelList)
+    {
+        <dt>@Blog.BlogTitle</dt>
+        <dt>@Blog.Author.GivenName</dt>
+    }
+</dl>
+
+@code {
+    [Parameter]
+    public IEnumerable<Blog> ModelList { get; set; }
+ }
